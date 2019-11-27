@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
         - uses: actions/checkout@master
-        - run: ./.github/workflows/tmate.sh
+#        - run: ./.github/workflows/tmate.sh
         - uses: ./.github/buildenv
           with:
             args: ./hadoop-ozone/dev-support/checks/build.sh
