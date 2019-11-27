@@ -19,6 +19,7 @@ jobs:
   acceptance:
     name: acceptance
     runs-on: ubuntu-18.04
+    timeout-minutes: 90
     steps:
         - uses: actions/checkout@master
 #        - run: ./.github/workflows/tmate.sh
