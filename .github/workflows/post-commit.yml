@@ -22,7 +22,7 @@ jobs:
     timeout-minutes: 90
     steps:
         - uses: actions/checkout@master
-#        - run: ./.github/workflows/tmate.sh
+        - run: ./.github/workflows/tmate.sh
         - uses: ./.github/buildenv
           with:
             args: ./hadoop-ozone/dev-support/checks/build.sh
